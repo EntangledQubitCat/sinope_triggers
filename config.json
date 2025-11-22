@@ -1,0 +1,35 @@
+{
+  "auth": {
+    "email": "{your_email}",
+    "password": "{your_password}",
+    "locationId": 1234,
+    "deviceId": "5678"
+  },
+  "settings": {
+    "check_interval": 6
+  },
+  "triggers": {
+    "on_heater_on": [
+      {
+        "action_type": "keyboard",
+        "key": "volume up",
+        "repeat": 7
+      },
+      {
+        "action_type": "sleep",
+        "seconds": 50
+      }
+    ],
+    "on_heater_off": [
+      {
+        "action_type": "keyboard",
+        "key": "volume down",
+        "repeat": 7
+      },
+      {
+        "action_type": "sleep",
+        "seconds": 570
+      }
+    ]
+  }
+}
